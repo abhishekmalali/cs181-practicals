@@ -39,7 +39,7 @@ test_df = pd.concat([test_df,\
 ##Omitting the 'smiles' columns
 test_data = test_df[train_cols]
 
-##Predicting through Random Forests
+##Predicting through trained Lasso model
 test_pred = lasso.predict(test_data)
 
 ##Writing output to file
