@@ -19,3 +19,9 @@ def RMSE(ytest, predictions):
     print "RMSE = ", rms
     return rms
 
+def write_to_file(filename, predictions):
+    with open(filename, "w") as f:
+        f.write("Id,Prediction\n")
+        for i,p in enumerate(predictions):
+            f.write(str(i+1) + "," + str(p) + "\n")
+
