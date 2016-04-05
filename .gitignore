@@ -65,4 +65,5 @@ target/
 #data files
 *.gz
 practical_1/data/
+practical_3/data/
 practical_2/data/
