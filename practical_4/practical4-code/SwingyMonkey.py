@@ -98,6 +98,8 @@ class SwingyMonkey:
                       'top': <screen height of top of monkey>,
                       'bot': <screen height of bottom of monkey> }}'''
 
+        # added line of code to deal with bug reported on piazza
+        next_tree = {"x": 0, "y": 0}
         # Find the next closest tree.
         for tree in self.trees:
             if tree['x']+290 > self.monkey_left:
